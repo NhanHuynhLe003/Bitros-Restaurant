@@ -1,0 +1,439 @@
+:root{
+    --theme-color: #e40000;
+    --primary-color: #fb811e;
+    --primary-light: #fcf1e7;
+    --primary-dark: #ffc945;
+    --secondary-color: #009f4d;
+    --font-color: #707070;
+    --bg-color: #fff;
+    --heading-color: #060606;
+    --footer-color: #060e1f;
+    --footer-cpy-color: #040a17;
+    --border-radius: 30px;
+    --border-radius-full: 15px;
+    --border-color: transparent;
+    --border-color-light: #eee;
+    --iframe-filter: grayscale(0%);
+    --bg-grey: #f4f4f4;
+    --bg-light: #fafafa;
+    --bg-dark-color: #fff;
+    --quote-text-color: #1d2c4c;
+    --icon-gra-color: linear-gradient(75deg, #1c2e7b 10%, #e60264);
+    --shadow-color: rgba(10, 16, 34, .2);
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #ff4c4c;
+    --secondary: #e71d36;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*change nav color*/
+.nav-input-changed{
+    border: 1px solid #eee;
+}
+.dark-color{
+    color: var(--dark) !important;
+}
+.bistros-logo-2{
+    font-size: 30px;
+    color: var(--dark);
+    font-weight: 600;
+}
+nav .bistros-logo-2:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+.icon-logo-2{
+    transform: rotate(24deg);
+    font-size: 28px;
+    color: var(--orange);
+}
+.nav-list-container-2{
+    display: flex;
+}
+
+/*header-nav*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 1% 2.5% 0 2.5%;
+    z-index: 3000;
+}
+nav .bistros-logo{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+nav .bistros-logo:hover{
+    color: var(--secondary-color);
+    cursor: pointer;
+
+}
+nav .bistros-logo:hover > i{
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+nav .bistros-logo span{
+
+}
+nav .bistros-logo i{
+    transform: rotate(24deg);
+    font-size: 28px;
+    color: #fff;
+}
+nav .nav-list-container{
+    display: flex;
+}
+nav .nav-list-container ul{
+    display: flex;
+    padding-right: 3%;
+    line-height: 40px;
+}
+.nav-list-container ul li{
+    width: 85px;
+    list-style-type: none;
+}
+.nav-list-container ul li i{
+    color: #fff;
+}
+.nav-list-container ul li:last-child{
+    width: 102px;
+}
+.nav-list-container ul li a{
+    text-decoration: none;
+    border: none;
+    color: var(--bg-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 6px 8px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.nav-list-container ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+.nav-list-container .search-bar{
+    width: 230px;
+    position: relative;
+    
+}
+.fa-moon{
+    color: #fff;
+        font-size: 28px;
+        line-height: 0;
+        padding: 20px;
+}
+.nav-list-container .search-bar input{
+    width: 100%;
+    padding: 4%;
+    border-radius: 30px;
+    border: none;
+    padding-left: 8%;
+}
+.nav-list-container .search-bar i{
+    top: 5%;
+    position: absolute;
+    right: 3%;
+    padding: 5%;
+}
+.nav-list-container .moon-light{
+
+}
+
+header .left{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    padding-top: 20%;
+    padding-left: 5%;
+    background-color: var(--orange);
+}
+.left .greeting{
+    font-size: 45px;
+    line-height: 55px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+.left .time-working{
+    padding-top: 4%;
+    display: flex;
+}
+.left .time-working .regular{
+    font-size: 24px;
+    color: #fff;
+}
+.left .time-working .time{
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+}
+.left .btn{
+    color: #fff;
+    background-color: var(--orange);
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 6%;
+}
+header .right{
+    float: right;
+    width: 50%;
+    height: 100vh;
+    padding-top: 15%;
+    background: url(./access/image/banner1.jpg) no-repeat center;
+    background-size: cover;
+}
+.right .image-food-container{
+    margin-left: 4%;
+}
+.right .image-food-container .item:first-child{
+    background: url(./access/image/banh-mi.jpg) no-repeat center;
+    background-size: cover;
+    width: 37%;
+    height: 27vh;
+    border-radius: 20px;
+}
+.right .image-food-container .item:last-child{
+    background: url(./access/image/banh-xeo.jpg) no-repeat center;
+    background-size: cover;
+    width: 37%;
+    height: 27vh;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+.right .image-food-container .item .modal-item{
+    padding: 10px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.image-food-container .item .modal-item h4{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.image-food-container .item .modal-item a{
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.image-food-container .item .modal-item p{
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.right .floater{
+    background-color: var(--heading-color);
+    position: fixed;
+    right: 0;
+    top: 10%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    z-index: 10000;
+
+}
+.right .floater ul{
+    padding: 0;
+    
+}
+.right .floater li i{
+    color: #ccc;
+    font-size: 20px;
+    padding: 5px 0;
+}
+.right .floater li{
+    padding: 13px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.right .floater li a{
+    text-decoration: none;
+    color: #ccc;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#content{
+    padding-top: 100vh;
+}
+.content__delicious-food{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 14vh;
+}
+.content__delicious-food__image-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 45%;
+}
+.content__delicious-food__image-container .image-1{
+    position: relative;
+    z-index: 1000;
+    border-radius: 20px;
+
+}
+.content__delicious-food__image-container:hover .image-1{
+    transform: translate(90px, -70px);
+    transition: transform 300ms ease-out;
+}
+.content__delicious-food__image-container .image-1 img{
+    border-radius: 20px;
+}
+.content__delicious-food__image-container .image-2{
+    position: absolute;
+    top: -11%;
+    left: 8%;
+    border-radius: 20px;
+    
+}
+.content__delicious-food__image-container:hover .image-2{
+    transform: translate(0, 30px);
+    transition: transform 300ms ease-out;
+}
+.content__delicious-food__image-container .image-2 img{
+    border-radius: 20px;
+
+}
+.content__delicious-food__wrapper{
+    width: 40%;
+}
+.content__delicious-food__wrapper h2{
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.content__delicious-food__wrapper .description{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 28px;
+    color: var(--font-color);
+    
+}
+.content__delicious-food__wrapper__location{
+    display: flex;
+    margin-top: 48px;
+}
+.content__delicious-food__wrapper__location i{
+    color: var(--primary-color);
+    font-size: 40px;
+    padding: 24px 24px 24px 0;
+    
+}
+.content__delicious-food__wrapper__location p{
+    margin: 0;
+    padding: 0;
+    color: var(--heading-color);
+    font-family: 'Josefin Sans', sans-serif;
+    width: 27%;
+    line-height: 31px;
+}
+
+.our-dishes-about{
+    padding: 14% 12% 8% 12%;
+    background-color: var(--secondary-color);
+}
+.our-dishes-about__left{
+    
+}
+.our-dishes-about__left h3{
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.our-dishes-about__left .description{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 28px;
+    margin: 24px 0 48px 0;
+}
+.our-dishes-about__left__wrapper{
+
+}
+.our-dishes-about__left__wrapper ul{
+    padding: 0;
+}
+.our-dishes-about__left__wrapper ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+.our-dishes-about__left__wrapper ul li:nth-child(2){
+    margin: 48px 0;
+}
+.our-dishes-about__left__wrapper ul li:last-child{
+    margin-bottom: 60px;
+}
+.our-dishes-about__left__wrapper ul li .name-food{
+    font-size: 24px;
+    font-weight: 600;
+    color: #eee;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 28px;
+}
+.our-dishes-about__left__wrapper ul li .price{
+    font-weight: 700;
+    font-size: 26px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.our-dishes-about__left .view-more{
+    padding: 12px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.our-dishes-about__right{
+
+}
+.our-dishes-about__right img{
+    width: 90%;
+    margin-left: 10%;
+}
