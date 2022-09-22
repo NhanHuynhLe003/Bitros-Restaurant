@@ -7,6 +7,9 @@ const iconOfPages = document.querySelector('.nav-list-container ul li i');
 const moonIcon = document.querySelector('.nav-list-container > i');
 const inputNav = document.querySelector('.search-bar input');
 
+const textAppear = document.querySelector('.sub-heading1');
+
+/**xu li thanh cuon */
 const scrollBarPosition = window.addEventListener('scroll', () => {
     const pst = window.scrollY;
     
@@ -45,3 +48,65 @@ const scrollBarPosition = window.addEventListener('scroll', () => {
     }
     
 });
+
+/**xu li xuat hien chu*/
+
+const textJs = 'Fresh Meals!'
+
+function sleep(ms){
+    return new Promise(function(resolve){
+        setTimeout(resolve, ms);
+    })
+}
+
+    sleep(1000)
+        .then(function(){
+            textAppear.querySelector(`.letter-1`).innerText = textJs[0];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-2`).innerText = textJs[1];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-3`).innerText = textJs[2];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-4`).innerText = textJs[3];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-5`).innerText = textJs[4];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-6`).innerText = textJs[5];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-7`).innerText = textJs[6];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-8`).innerText = textJs[7];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-9`).innerText = textJs[8];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-10`).innerText = textJs[9];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-11`).innerText = textJs[10];
+            return sleep(300);
+        })
+        .then(function(){
+            textAppear.querySelector(`.letter-12`).innerText = textJs[11];
+            return sleep(300);
+        })
+
+    
